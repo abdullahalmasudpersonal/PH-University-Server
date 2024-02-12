@@ -18,6 +18,7 @@ const getAllAcademicSemestersFromDB = async () => {
 
 const getSingleAcademicSemesterFromDB = async (id: string) => {
   const result = await AcademicSemester.findById(id);
+  console.log('asdu',result)
   return result;
 };
 
